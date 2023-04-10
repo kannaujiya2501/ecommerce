@@ -1,0 +1,27 @@
+.navbar-light .navbar-nav .nav-link.active-link
+{
+    color:green;
+    font-weight: bold;
+    
+    
+}
+.navbar-light .navbar-nav .nav-link.active-link
+{
+    color:nav(secondary-color);
+    text-decoration: underline;
+}
+.container-fluid
+{
+    background-color:aliceblue;
+    
+}
+/* .topnav
+{
+
+} */
+.navbar-brand
+{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    
+}
