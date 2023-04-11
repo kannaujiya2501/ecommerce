@@ -11,6 +11,10 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './pages/login/login.component';
+import { ProductdashboardComponent } from './productdashboard/productdashboard.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -21,11 +25,15 @@ import { LoginComponent } from './pages/login/login.component';
     ProductComponent,
     ContactComponent,
     AboutComponent,
-    LoginComponent
+    LoginComponent,
+    ProductdashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     NgbModule
   ],
   providers: [],

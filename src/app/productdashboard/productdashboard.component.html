@@ -1,0 +1,97 @@
+<div class="p-5 mb-4 bg-light rounded-2">
+    <div class="container-fluid py-3">
+        <!-- <h1 class="display-5 fw-bold"> Add Product</h1> -->
+      
+    <button (click)="clickAddProduct()" class=" btn btn-success"  type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Product</button>
+    &nbsp;&nbsp;
+   
+    </div>
+
+</div>
+
+
+<!--Table shown-->
+<table class="table  mt-3">
+    <thead>
+        <tr>
+          <th scope="col" >Product Id</th>
+            <th scope="col" >Product Name</th>
+            <th scope="col" >Product Description</th>
+            <th scope="col" >Unit Price</th>
+            <th scope="col" >Images</th>
+            <th scope="col" >Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of allProductData">
+        
+           <td>{{data.productId}}</td>
+           <td>{{data.productName}}</td>
+           <td>{{data.productDescription}}</td>
+          
+           <td>₹{{data.unitPrice}}</td>
+           <td>  <img src="{{data.imageUrl}}" width="80px" height="80px"  alt=""></td>
+           <td>
+               <button (click)="onEditProduct(data)" class="btn btn-info" class=" btn btn-success"  type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>&nbsp;
+               <button (click)="deleteProduct(data)" class="btn btn-danger ">Delete</button>
+               
+           </td>
+         
+        </tr>
+      
+    </tbody>
+</table>
+
+
+<!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="formValue">
+                <div class="mb-3">
+                  <label for="Name" class="form-label">productName</label>
+                  <input type="text" formControlName="productName" class="form-control" id="Name" placeholder=" Furniturename" aria-describedby="emailHelp">
+                  <br>
+                  <span class="text-danger" *ngIf="formValue.controls['productName'].dirty && formValue.hasError('required','productName')">*productName is required</span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="productDescription" class="form-label">productDescription</label>
+                    <input type="text" formControlName="productDescription" class="form-control" id="productDescription" placeholder="Furnitureimage" aria-describedby="emailHelp">
+                    <span class="text-danger" *ngIf="formValue.controls['productDescription'].dirty && formValue.hasError('required','productDescription')">productDescription</span>
+                  </div>
+                  <div class="mb-3">
+                    <label for="imageUrl" class="form-label">Prodcuctimage</label>
+                   <!-- <input type="file" (change)="selectFile($event)"> -->
+                    <input type="file" formControlName="imageUrl" class="form-control" id="imageUrl" placeholder="Furnitureimage" aria-describedby="emailHelp">
+                    <span class="text-danger" *ngIf="formValue.controls['imageUrl'].dirty && formValue.hasError('required','imageUrl')">imageUrl</span>
+                  </div>
+                  <div class="mb-3">
+                    <label for="unitPrice" class="form-label">unitPrice</label>
+                    <input type="text" formControlName="unitPrice" class="form-control" id="unitPrice" placeholder="description" aria-describedby="emailHelp">
+                    <span class="text-danger" *ngIf="formValue.controls['unitPrice'].dirty && formValue.hasError('required','unitPrice')">*unitPrice</span>
+                  </div>
+                 
+                 
+                
+               
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="clear" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button  *ngIf="showAdd"  [disabled]=formValue.invalid (click)="addProduct()" type="button" class="btn btn-primary" >Add Details</button>
+          <button *ngIf="showUpdate"  [disabled]=formValue.invalid type="button" class="btn btn-primary" (click)="updateProduct()">Update Details</button>
+        </div>
+      </div>
+    </div> 
+  </div>
+
+
