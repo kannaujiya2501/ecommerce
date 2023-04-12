@@ -30,8 +30,8 @@
       <td>{{data.vendorName}}</td>
       <td>{{data.companyName}}</td>
 
-      <td>{{data.Phone}}</td>
-      <td> <img src="{{data.imageUrl}}" width="80px" height="80px" alt=""></td>
+      <td>{{data.phone}}</td>
+      <td> {{data.Email}}</td>
       <td>
         <button (click)="onEditvendor(data)" class="btn btn-info" class=" btn btn-success" type="button"
           class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>&nbsp;
@@ -77,19 +77,19 @@
               Name</span>
           </div>
           <div class="mb-3">
-            <label for="imageUrl" class="form-label">Email</label>
+            <label for="Email" class="form-label">Email</label>
             <!-- <input type="file" (change)="selectFile($event)"> -->
-            <input type="text" formControlName="imageUrl" class="form-control" id="imageUrl"
+            <input type="text" formControlName="Email" class="form-control" id="Email"
               placeholder="Email" aria-describedby="emailHelp">
             <span class="text-danger"
-              *ngIf="formValue.controls['imageUrl'].dirty && formValue.hasError('required','imageUrl')">imageUrl</span>
+              *ngIf="formValue.controls['Email'].dirty && formValue.hasError('required','Email')">Email</span>
           </div>
           <div class="mb-3">
-            <label for="Phone" class="form-label">Phone</label>
-            <input type="text" formControlName="unitPrice" class="form-control" id="unitPrice" placeholder="Enter your phone number"
+            <label for="phone" class="form-label">Phone</label>
+            <input type="text" formControlName="phone" class="form-control" id="phone" placeholder="Enter your phone number"
               aria-describedby="emailHelp">
             <span class="text-danger"
-              *ngIf="formValue.controls['unitPrice'].dirty && formValue.hasError('required','unitPrice')">*phone</span>
+              *ngIf="formValue.controls['phone'].dirty && formValue.hasError('required','phone')">*phone</span>
           </div>
 
 

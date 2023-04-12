@@ -1,22 +1,5 @@
 {
-  "posts": [],
   "posts": [
-    {
-      "productId": 1,
-      "productName": "chair",
-      "productDescription": "wooden",
-      "imageUrl": "assets/cimg1.jpg",
-      "unitPrice": "4567",
-      "id": 1
-    },
-    {
-      "productId": 2,
-      "productName": "bed",
-      "productDescription": " for sleep",
-      "imageUrl": "assets/bimg2.jpg",
-      "unitPrice": "9585",
-      "id": 2
-    },
     {
       "productId": 3,
       "productName": "bed",
@@ -24,6 +7,19 @@
       "imageUrl": "assets/bimg1.jpg",
       "unitPrice": "11153",
       "id": 3
+    }
+  ],
+  "vendor": [
+    {
+      "productId": 0,
+      "productName": "",
+      "productDescription": "",
+      "imageUrl": "",
+      "vendorName": "Vishal Kannaujiya",
+      "companyName": "mastek",
+      "Email": "kannaujiyavishal12@gmail.com",
+      "phone": "+918286995735",
+      "id": 1
     }
   ],
   "comments": [],

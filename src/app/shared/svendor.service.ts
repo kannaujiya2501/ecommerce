@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators'
 })
 export class svendorService {
 
-  url=" http://localhost:3000/posts";
+  url=" http://localhost:3000/vendor";
 
   constructor(private _http:HttpClient) { }
   postvendor(data:any){

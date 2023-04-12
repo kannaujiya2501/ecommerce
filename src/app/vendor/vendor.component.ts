@@ -75,7 +75,7 @@ export class vendorComponent {
     this.showUpdate = true;
     this.vendorModelObj.vendorId = data.id;
     this.formValue.controls['vendorName'].setValue(data.vendorName);
-    this.formValue.controls['vendorDescription'].setValue(data.vendorDescription);
+    this.formValue.controls['companyName'].setValue(data.companyName);
     this.formValue.controls['Email'].setValue(data.Email);
     this.formValue.controls['phone'].setValue(data.phone);
     
