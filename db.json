@@ -2,11 +2,27 @@
   "posts": [
     {
       "productId": 1,
-      "productName": "burger34567",
-      "productDescription": "nhhhggg",
-      "imageUrl": "C:\\fakepath\\SachinYadav_Adhar card_page-0001.jpg",
+      "productName": "chair",
+      "productDescription": "wooden",
+      "imageUrl": "assets/cimg1.jpg",
       "unitPrice": "4567",
       "id": 1
+    },
+    {
+      "productId": 2,
+      "productName": "bed",
+      "productDescription": " for sleep",
+      "imageUrl": "assets/bimg2.jpg",
+      "unitPrice": "9585",
+      "id": 2
+    },
+    {
+      "productId": 3,
+      "productName": "bed",
+      "productDescription": "comfart sleep",
+      "imageUrl": "assets/bimg1.jpg",
+      "unitPrice": "11153",
+      "id": 3
     }
   ],
   "comments": [],
