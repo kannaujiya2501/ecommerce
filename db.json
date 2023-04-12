@@ -1,14 +1,5 @@
 {
-  "posts": [
-    {
-      "productId": 1,
-      "productName": "burger34567",
-      "productDescription": "nhhhggg",
-      "imageUrl": "C:\\fakepath\\SachinYadav_Adhar card_page-0001.jpg",
-      "unitPrice": "4567",
-      "id": 1
-    }
-  ],
+  "posts": [],
   "comments": [],
   "profile": {
     "name": "typicode"

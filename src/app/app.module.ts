@@ -14,6 +14,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { ProductdashboardComponent } from './productdashboard/productdashboard.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { vendorComponent } from './vendor/vendor.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     ContactComponent,
     AboutComponent,
     LoginComponent,
-    ProductdashboardComponent
+    ProductdashboardComponent,
+    vendorComponent
   ],
   imports: [
     BrowserModule,

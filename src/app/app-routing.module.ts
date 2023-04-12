@@ -6,6 +6,7 @@ import { ProductComponent } from './pages/product/product.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ProductdashboardComponent } from './productdashboard/productdashboard.component';
+import { vendorComponent } from './vendor/vendor.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path:'contact',component:ContactComponent},
   {path:'about',component:AboutComponent},
   {path:'login',component:LoginComponent},
-  {path: 'productdashboard',component:ProductdashboardComponent}
+  {path: 'productdashboard',component:ProductdashboardComponent},
+  {path:'vendor',component:vendorComponent}
 
 
 ];
