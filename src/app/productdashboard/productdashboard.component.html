@@ -65,18 +65,18 @@
 
                 <div class="mb-3">
                     <label for="productDescription" class="form-label">productDescription</label>
-                    <input type="text" formControlName="productDescription" class="form-control" id="productDescription" placeholder="Furnitureimage" aria-describedby="emailHelp">
+                    <input type="text" formControlName="productDescription" class="form-control" id="productDescription" placeholder="Description" aria-describedby="emailHelp">
                     <span class="text-danger" *ngIf="formValue.controls['productDescription'].dirty && formValue.hasError('required','productDescription')">productDescription</span>
                   </div>
                   <div class="mb-3">
                     <label for="imageUrl" class="form-label">Prodcuctimage</label>
-                   <!-- <input type="file" (change)="selectFile($event)"> -->
-                    <input type="file" formControlName="imageUrl" class="form-control" id="imageUrl" placeholder="Furnitureimage" aria-describedby="emailHelp">
+                   
+                    <input type="text" formControlName="imageUrl" class="form-control" id="imageUrl" placeholder="Furnitureimage" aria-describedby="emailHelp">
                     <span class="text-danger" *ngIf="formValue.controls['imageUrl'].dirty && formValue.hasError('required','imageUrl')">imageUrl</span>
                   </div>
                   <div class="mb-3">
                     <label for="unitPrice" class="form-label">unitPrice</label>
-                    <input type="text" formControlName="unitPrice" class="form-control" id="unitPrice" placeholder="description" aria-describedby="emailHelp">
+                    <input type="text" formControlName="unitPrice" class="form-control" id="unitPrice" placeholder="Enter Price" aria-describedby="emailHelp">
                     <span class="text-danger" *ngIf="formValue.controls['unitPrice'].dirty && formValue.hasError('required','unitPrice')">*unitPrice</span>
                   </div>
                  
